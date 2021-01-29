@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  overflow: hidden; }
+
+#main-header {
+  padding: 1.2rem;
+  background: rgba(133, 132, 132, 0.3);
+  color: whitesmoke; }
+  #main-header .bg-header,
+  #main-header .sm-header {
+    margin-left: 10%;
+    z-index: 3; }
+  #main-header .bg-header-text {
+    color: #f6961c;
+    font-weight: bold; }
+
+body {
+  background: url("https://4.bp.blogspot.com/-zO8hwvt7iMk/XAVxt4aoQvI/AAAAAAAAwa4/D5m3ApKkAAABZteHWWv_5uzTn8X7JaDxgCPcBGAYYCw/s1600/7T9364v.gif");
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100%; }
+
+.number-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height: 500px;
+  border: 1px solid white;
+  background: rgba(133, 132, 132, 0.3);
+  padding: 10px;
+  text-align: center; }
+  .number-content .numbers {
+    color: whitesmoke;
+    padding: 10px;
+    font-size: 30px; }
+    .number-content .numbers.p-tens {
+      font-weight: bolder;
+      color: #f6961c; }

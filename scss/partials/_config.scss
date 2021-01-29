@@ -1,0 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+// Fonts
+$main-font: "Lato", sans-serif;
+
+// Colors
+$k-span-color: #f6961c;
+$header-color: #000;
+
+// Mixins
+@mixin easeOut() {
+  transition: 0.2s;
+}

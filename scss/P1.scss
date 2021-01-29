@@ -1,0 +1,192 @@
+@import "partials/config";
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: $main-font;
+}
+
+#main-header {
+  padding: 1.2rem;
+  background: $header-color;
+  color: whitesmoke;
+
+  .bg-header,
+  .sm-header {
+    margin-left: 20%;
+  }
+
+  .bg-header-text {
+    color: $k-span-color;
+    font-weight: bold;
+  }
+}
+
+.converter {
+  margin-top: 1.2rem;
+  padding: 2rem;
+  width: 100%;
+  height: 350px;
+  //background: chocolate;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+
+  .converter-container {
+    border: 2px solid black;
+    border-radius: 20px;
+    min-width: 60%;
+    max-width: 600px;
+    padding: 15px;
+    text-align: center;
+  }
+
+  .form-container {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+
+    .input {
+      margin-top: 1.6rem;
+    }
+
+    label {
+      width: 2.7rem;
+      display: inline-block;
+    }
+  }
+
+  .form-buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 40px;
+
+    .btn {
+      width: 120px;
+      height: 43px;
+      font-size: 20px;
+      cursor: pointer;
+    }
+
+    .btn-submit {
+      @extend .btn;
+      color: whitesmoke;
+      background: $header-color;
+      border: none;
+
+      &:hover {
+        background: $k-span-color;
+        color: $header-color;
+        @include easeOut;
+      }
+    }
+
+    .btn-clear {
+      @extend .btn;
+
+      &:hover {
+        color: whitesmoke;
+        background: $header-color;
+        border: none;
+        @include easeOut;
+      }
+    }
+  }
+
+  .result {
+    margin-top: 20px;
+    text-align: center;
+
+    .num-and-unit {
+      color: $k-span-color;
+    }
+  }
+}
+
+.conversion-table {
+  //color: red;
+  margin-top: 1.2rem;
+  padding: 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+
+  .conversion-table-container {
+    min-width: 60%;
+    max-width: 70%;
+    padding: 15px;
+    //margin-bottom: 45px;
+    text-align: center;
+
+    .cnv-bg-text {
+      color: $k-span-color;
+    }
+
+    .table {
+      display: table;
+      table-layout: fixed;
+      margin-bottom: 40px;
+      width: 100%;
+      margin-top: 15px;
+      font-size: 20px;
+
+      &,
+      th,
+      td,
+      tr {
+        border: 2px black solid;
+        border-collapse: collapse;
+      }
+
+      td {
+        height: 50px;
+
+        &.op {
+          color: $k-span-color;
+          font-size: 50px;
+          width: 20px;
+        }
+
+        &.header {
+          font-size: 30px;
+          font-weight: bold;
+          background: $header-color;
+          color: whitesmoke;
+        }
+      }
+    }
+  }
+}
+
+#main-footer {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  background: $header-color;
+
+  .footer-notes {
+    color: whitesmoke;
+    padding: 1.4rem;
+    font-size: 10px;
+  }
+
+  .nav-links {
+    display: flex;
+    list-style: none;
+
+    .nav-items a {
+      padding: 1.1rem;
+      color: whitesmoke;
+      text-decoration: none;
+
+      &:hover {
+        color: $k-span-color;
+        @include easeOut;
+      }
+    }
+  }
+}
